@@ -120,6 +120,9 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Security\" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\christoff%40firsttech.digital.sql" />
@@ -127,5 +130,14 @@
     <Build Include="Security\usr_fd_internal_1.sql" />
     <Build Include="Security\RoleMemberships.sql" />
     <Build Include="Security\Permissions.sql" />
+    <Build Include="dbo\Tables\pointMatrix.sql" />
+    <Build Include="dbo\Tables\points.sql" />
+    <Build Include="dbo\Tables\pointTypes.sql" />
+    <Build Include="dbo\Tables\rewardIdeas.sql" />
+    <Build Include="dbo\Tables\rewards.sql" />
+    <Build Include="dbo\Tables\userDetails.sql" />
+    <Build Include="dbo\Tables\userPoints.sql" />
+    <Build Include="dbo\Tables\userPointsData.sql" />
+    <None Include="Scripts\ScriptsIgnoredOnImport.sql" />
   </ItemGroup>
 </Project>
