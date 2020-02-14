@@ -4,6 +4,7 @@
     [TotalPoints]           INT           NOT NULL,
     [UpdatedBy]             VARCHAR (100) NULL,
     [UpdatedByDate]         DATETIME      NULL,
-    PRIMARY KEY CLUSTERED ([EmployeeRewardPointID] ASC)
+    PRIMARY KEY CLUSTERED ([EmployeeRewardPointID] ASC),
+    CONSTRAINT [FK_EmployeeKPI_EmployeeRewardPoints] FOREIGN KEY ([EmployeeID]) REFERENCES [dbo].[Employee] ([EmployeeID])
 );
 
