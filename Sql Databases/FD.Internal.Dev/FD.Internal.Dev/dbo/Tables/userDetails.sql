@@ -1,9 +1,0 @@
-﻿CREATE TABLE [dbo].[userDetails](
-	[userID] [int] IDENTITY(1,1) NOT NULL,
-	[AzureLoginID] [int] NOT NULL,
-	[IsDeleted] [date] NULL,
-PRIMARY KEY CLUSTERED 
-(
-	[userID] ASC
-)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
-) ON [PRIMARY]

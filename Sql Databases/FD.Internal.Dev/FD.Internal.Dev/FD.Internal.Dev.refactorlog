@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="b1aae425-93ed-4ac5-b50f-2bdd798d5f5d" ChangeDateTime="02/14/2020 07:52:28">
+    <Property Name="ElementName" Value="[dbo].[pointMatrix].[description]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[pointMatrix]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Description" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c1639be1-f94c-4b3c-8bc9-fe38b1dcc9ae" ChangeDateTime="02/14/2020 07:52:32">
+    <Property Name="ElementName" Value="[dbo].[pointMatrix].[pointMatrixID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[pointMatrix]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PointMatrixID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b4480b28-004a-4782-b04e-504943c1cc83" ChangeDateTime="02/14/2020 07:52:44">
+    <Property Name="ElementName" Value="[dbo].[pointMatrix].[isDeleted]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[pointMatrix]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IsDeleted" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a68561b3-92c4-406e-95fa-7571eccf5335" ChangeDateTime="02/14/2020 07:52:49">
+    <Property Name="ElementName" Value="[dbo].[pointMatrix].[pointType]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[pointMatrix]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PointType" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1573ce16-e67a-48ec-ab74-a1663dd951b2" ChangeDateTime="02/14/2020 07:52:52">
+    <Property Name="ElementName" Value="[dbo].[pointMatrix].[pointValue]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[pointMatrix]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PointValue" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="37a6b4ea-75a7-46c4-be67-39a323283b43" ChangeDateTime="02/14/2020 07:52:56">
+    <Property Name="ElementName" Value="[dbo].[pointMatrix].[rewardValuePoints]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[pointMatrix]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RewardValuePoints" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9d8ba6bc-7e54-4d3b-9842-517a4da52921" ChangeDateTime="02/14/2020 07:53:02">
+    <Property Name="ElementName" Value="[dbo].[pointMatrix].[userID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[pointMatrix]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UserID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1ece582b-aaa6-4346-821e-0701d8b56d1a" ChangeDateTime="02/14/2020 07:53:04">
+    <Property Name="ElementName" Value="[dbo].[pointMatrix].[pointRewardType]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[pointMatrix]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PointRewardType" />
+  </Operation>
+</Operations>

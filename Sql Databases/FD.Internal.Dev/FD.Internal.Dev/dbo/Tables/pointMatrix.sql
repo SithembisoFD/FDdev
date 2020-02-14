@@ -1,17 +1,14 @@
-﻿CREATE TABLE [dbo].[pointMatrix](
-	[pointMatrixID] [int] IDENTITY(1,1) NOT NULL,
-	[description] [varchar](50) NULL,
-	[isDeleted] [bit] NULL,
-	[pointType] [varchar](50) NULL,
-	[pointValue] [int] NULL,
-	[rewardValuePoints] [int] NULL,
-	[userID] [int] NULL,
-	[pointRewardType] [varchar](50) NULL,
-PRIMARY KEY CLUSTERED 
-(
-	[pointMatrixID] ASC
-)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
-) ON [PRIMARY]
+﻿CREATE TABLE [dbo].[PointMatrix] (
+    [PointMatrixID]    INT           IDENTITY (1, 1) NOT NULL,
+    [Description]      VARCHAR (50)  NULL,
+    [IsDeleted]        BIT           NULL,
+    [PointTypeID]      INT           NULL,
+    [PointValue]       INT           NULL,
+    [RewardPointValue] INT           NULL,
+    [CreatedBy]        VARCHAR (100) NULL,
+    [CreatedDate]      DATETIME      NULL,
+    CONSTRAINT [PK__pointMat__D4E20934372CA4BC] PRIMARY KEY CLUSTERED ([PointMatrixID] ASC)
+);
+
+
 GO
-ALTER TABLE [dbo].[pointMatrix]  WITH CHECK ADD FOREIGN KEY([userID])
-REFERENCES [dbo].[userDetails] ([userID])
