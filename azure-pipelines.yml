@@ -1,16 +1,4 @@
-# .NET Desktop
-- task: SqlAzureDacpacDeployment@1
-  inputs:
-    AuthenticationType: 'server'
-    ServerName: 'tcp:azsql-fd-sa-n.database.windows.net,1433'
-    DatabaseName: 'FD.Internal.Dev'
-    SqlUsername: 'usr_fd_internal'
-    SqlPassword: '@T(G3cb%!DdPC;\p'
-    deployType: 'DacpacTask'
-    DeploymentAction: 'Publish'
-    DacpacFile: 'test'
-    IpDetectionMethod: 'AutoDetect'
-# Build and run tests for .NET Desktop or Windows classic desktop solutions.
+
 # Add steps that publish symbols, save build artifacts, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/apps/windows/dot-net
 
@@ -34,11 +22,14 @@ steps:
 
 - task: VSBuild@1
   inputs:
+    clean: true
     solution: '$(solution)'
+    msbuildArgs: '/p:DeployOnBuild=true'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-
-- task: VSTest@2
+    # Build and run tests for .NET Desktop or Windows classic desktop solutions.
+- task: PublishBuildArtifacts@1
   inputs:
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+    PathtoPublish: 'Sql Databases\FD.Internal.Dev\FD.Internal.Dev\bin\Release\'
+    ArtifactName: 'FD.Internal'
+    publishLocation: 'Container'
