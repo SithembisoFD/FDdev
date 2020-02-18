@@ -125,11 +125,11 @@
     <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Security\christoff%40firsttech.digital.sql" />
-    <Build Include="Security\usr_fd_internal.sql" />
-    <Build Include="Security\usr_fd_internal_1.sql" />
-    <Build Include="Security\RoleMemberships.sql" />
-    <Build Include="Security\Permissions.sql" />
+    <None Include="Security\christoff%40firsttech.digital.sql" />
+    <None Include="Security\usr_fd_internal.sql" />
+    <None Include="Security\usr_fd_internal_1.sql" />
+    <None Include="Security\RoleMemberships.sql" />
+    <None Include="Security\Permissions.sql" />
     <Build Include="dbo\Tables\PointMatrix.sql" />
     <None Include="Scripts\ScriptsIgnoredOnImport.sql" />
     <Build Include="dbo\Tables\Reward.sql">
@@ -164,10 +164,5 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FD.Internal.Dev.publish.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
 </Project>
