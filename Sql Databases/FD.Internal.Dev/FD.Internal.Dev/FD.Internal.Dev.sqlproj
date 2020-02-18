@@ -165,4 +165,7 @@
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="FD.Internal.Dev.publish.xml" />
+  </ItemGroup>
 </Project>
