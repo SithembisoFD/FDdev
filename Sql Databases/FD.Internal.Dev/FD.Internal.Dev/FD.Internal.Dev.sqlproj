@@ -166,6 +166,8 @@
     </Build>
   </ItemGroup>
   <ItemGroup>
-    <None Include="FD.Internal.Dev.publish.xml" />
+    <None Include="FD.Internal.Dev.publish.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>
