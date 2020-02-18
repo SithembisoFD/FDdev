@@ -30,6 +30,6 @@ steps:
     # Build and run tests for .NET Desktop or Windows classic desktop solutions.
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)\Sql Databases\FD.Internal.Dev\bin\release'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)\Sql Databases\FD.Internal.Dev\FD.Internal.Dev\obj\Release'
     ArtifactName: 'FD.Internal'
     publishLocation: 'Container'
