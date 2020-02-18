@@ -7,7 +7,6 @@
     [EmployeeKPIID]          INT           NULL,
     [IsRewardPointAllocated] BIT           NULL,
     CONSTRAINT [PK__userPoin__091093DE7B6333C2] PRIMARY KEY CLUSTERED ([EmployeePointDataID] ASC),
-    CONSTRAINT [FK_EmployeeKPI_EmployeePointsData] FOREIGN KEY ([EmployeeKPIID]) REFERENCES [dbo].[EmployeePointsData] ([EmployeeKPIID]),
     CONSTRAINT [FK_EmployeeKPI_PointMatrix] FOREIGN KEY ([PointIMatrixID]) REFERENCES [dbo].[PointMatrix] ([PointMatrixID])
 );
 
