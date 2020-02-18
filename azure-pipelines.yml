@@ -22,20 +22,14 @@ steps:
 
 - task: VSBuild@1
   inputs:
+    clean: true
     solution: '$(solution)'
+    msbuildArgs: '/p:DeployOnBuild=true'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
     # Build and run tests for .NET Desktop or Windows classic desktop solutions.
-
-- task: DotNetCoreCLI@2
-  inputs:
-    command: publish
-    publishWebProjects: True
-    arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
-    zipAfterPublish: True
-
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'etbuild'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)\bin\release'
+    ArtifactName: 'FD.Internal'
     publishLocation: 'Container'
