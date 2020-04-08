@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "FD.Rewards.Database", "..\FD.Rewards.Database\FD.Rewards.Database.sqlproj", "{2D0AF019-0A35-46B4-8FF7-B57B1C634D41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FD.Rewards.Web", "..\FD.Rewards.Web\FD.Rewards.Web.csproj", "{79007FF3-C6A2-4B07-8911-E9A12BFE20EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FD.Rewards.Web", "..\FD.Rewards.Web\FD.Rewards.Web.csproj", "{79007FF3-C6A2-4B07-8911-E9A12BFE20EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
